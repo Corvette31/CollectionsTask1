@@ -7,7 +7,7 @@ namespace CollectionsTask1
     {
         static void Main(string[] args)
         {
-            Dictionary<string, string> explanatoryDictionary = FillDictionary();
+            Dictionary<string, string> explanatoryDictionary = CreateDictionary();
             bool isRun = true;
 
             while (isRun)
@@ -42,7 +42,7 @@ namespace CollectionsTask1
             }
         }
 
-        static Dictionary<string, string> FillDictionary()
+        static Dictionary<string, string> CreateDictionary()
         {
             Dictionary<string, string> dictionary = new Dictionary<string, string>()
             {
