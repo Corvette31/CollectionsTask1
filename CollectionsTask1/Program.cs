@@ -16,21 +16,11 @@ namespace CollectionsTask1
                 string userInput = Console.ReadLine();
 
                 OutputMeaningWord(explanatoryDictionary, userInput);
-                isRun = CheckExit(userInput) == false;
+                isRun = userInput != "exit";
             }
         }
 
-        private static bool CheckExit(string userInput)
-        {
-            if (userInput == "exit")
-            {
-                return true;
-            }
-
-            return false;
-        }
-
-        private static void OutputMeaningWord(Dictionary<string, string> explanatoryDictionary, string userInput)
+        static void OutputMeaningWord(Dictionary<string, string> explanatoryDictionary, string userInput)
         {
             if (explanatoryDictionary.ContainsKey(userInput) == false)
             {
